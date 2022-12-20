@@ -2,7 +2,7 @@ package sky.pro.course.les1.obj1;
 
 public class Book {
     private final String title;
-    private final Author author;
+    private Author author;
     private int publishingYear;
 
     public Book(String title, Author author, int publishingYear) {
@@ -28,4 +28,8 @@ public class Book {
         this.publishingYear = publishingYear;
     }
 
+//    @Override
+//    public String toString() {
+//        return "\"" + getTitle() + "\", " + getAuthor() + ", " + getPublishingYear();
+//    }
 }

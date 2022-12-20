@@ -13,8 +13,12 @@ public class Main {
         book1.setPublishingYear(2022);
 
 
-        System.out.println(book.getTitle()+" "+book.getAuthor().getFirstName()+" "+book.getAuthor().getLastName()+ " "+book.getPublishingYear());
-        System.out.println(book1.getTitle()+" "+book1.getAuthor().getFirstName()+" "+book1.getAuthor().getLastName()+ " "+book1.getPublishingYear());
+        System.out.println(book.getTitle() + " " + book.getAuthor() + " " + book.getPublishingYear());
+        System.out.println(book1.getTitle() + " " + book1.getAuthor() + " " + book1.getPublishingYear());
+
+//        System.out.println("book = " + book);
+//        System.out.println("book1 = " + book1);
     }
+
 
 }

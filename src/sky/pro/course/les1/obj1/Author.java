@@ -1,8 +1,8 @@
 package sky.pro.course.les1.obj1;
 
 public class Author {
-    private final String firstName;
-    private final String lastName;
+    private String firstName;
+    private String lastName;
 
     public Author(String firstName, String lastName) {
         this.firstName = firstName;
@@ -17,5 +17,9 @@ public class Author {
         return lastName;
     }
 
+    @Override
+    public String toString() {
+        return firstName + " " + lastName;
+    }
 }
 
