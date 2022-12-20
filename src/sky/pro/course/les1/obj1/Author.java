@@ -9,8 +9,13 @@ public class Author {
         this.lastName = lastName;
     }
 
-    public String toString() {
-        return this.firstName + " " + this.lastName;
+    public String getFirstName() {
+        return firstName;
     }
+
+    public String getLastName() {
+        return lastName;
+    }
+
 }
 

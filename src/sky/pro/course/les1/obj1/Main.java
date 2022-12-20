@@ -1,8 +1,6 @@
 package sky.pro.course.les1.obj1;
 
 public class Main {
-
-
     public static void main(String[] args) {
 
         Author author = new Author("Герберт", "Шилдт");
@@ -14,8 +12,9 @@ public class Main {
 
         book1.setPublishingYear(2022);
 
-        System.out.println("Книга 1 = " + book);
-        System.out.println("Книга 2 = " + book1);
+
+        System.out.println(book.getTitle()+" "+book.getAuthor().getFirstName()+" "+book.getAuthor().getLastName()+ " "+book.getPublishingYear());
+        System.out.println(book1.getTitle()+" "+book1.getAuthor().getFirstName()+" "+book1.getAuthor().getLastName()+ " "+book1.getPublishingYear());
     }
 
 }
