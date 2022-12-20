@@ -3,21 +3,22 @@ package sky.pro.course.les1.obj1;
 public class Main {
     public static void main(String[] args) {
 
-        Author author = new Author("Герберт", "Шилдт");
-        Author author1 = new Author("Брюс", "Эккель");
+        Author hSchildt = new Author("Герберт", "Шилдт");
+        Author bEckel = new Author("Брюс", "Эккель");
 
 
-        Book book = new Book("Java. Руководство для начинающих", author, 2019);
-        Book book1 = new Book("Философия JAVA", author1, 2015);
+        Book javaNoob = new Book("Java. Руководство для начинающих", hSchildt, 2019);
+        Book javaPhil = new Book("Философия JAVA", bEckel, 2015);
 
-        book1.setPublishingYear(2022);
+        javaPhil.setPublishingYear(2022);
 
 
-        System.out.println(book.getTitle() + " " + book.getAuthor() + " " + book.getPublishingYear());
-        System.out.println(book1.getTitle() + " " + book1.getAuthor() + " " + book1.getPublishingYear());
+        System.out.println(javaNoob.getTitle() + " " + hSchildt.getFirstName() + " " + hSchildt.getLastName() + " " + javaNoob.getPublishingYear());
+        System.out.println(javaPhil.getTitle() + " " + bEckel.getFirstName() + " " + bEckel.getLastName() + " " + javaPhil.getPublishingYear());
 
-//        System.out.println("book = " + book);
-//        System.out.println("book1 = " + book1);
+//        System.out.println(javaNoob.getTitle() + " " + javaNoob.getAuthor().getFirstName()+" "+ javaNoob.getAuthor().getLastName() + " " + javaNoob.getPublishingYear());
+//        System.out.println("javaNoob = " + javaNoob);
+//        System.out.println("javaPhil = " + javaPhil);
     }
 
 

@@ -2,7 +2,7 @@ package sky.pro.course.les1.obj1;
 
 public class Book {
     private final String title;
-    private Author author;
+    private final Author author;
     private int publishingYear;
 
     public Book(String title, Author author, int publishingYear) {
